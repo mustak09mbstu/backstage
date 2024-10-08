@@ -26,7 +26,7 @@ OR
 $ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 ```
 The command yields the following output:
-![alt text](image.png)
+![alt text](./images/image.png)
 
 Running either of the above commands downloads and runs the nvm script. The script clones the nvm repository to the ~/.nvm directory in the user’s home directory. It also appends the nvm and bash_completion source string lines to the ~/.bashrc file.
 
@@ -42,13 +42,13 @@ Once you’ve started a new shell session, run the following command to install 
 ```bash
 $ nvm install node
 ```
-![alt text](image-1.png)
+![alt text](./images/image-1.png)
 From the output, you can see that we have installed Node version 21.0.0 which is the current latest version at the time of writing this guide. To verify the version installed, run the command:
 
 ```bash
 $ node –version
 ```
-![alt text](image-2.png)
+![alt text](./images/image-2.png)
 To install a specific version of Node, append the node version number. For example, to install Node 20, which is the upcoming LTS release, run the command:
 
 ```bash
@@ -59,7 +59,7 @@ To install the current LTS release, run the command:
 $ nvm install –lts
 ```
 In this case, the command installs Node.js v22.8.0 which is currently the latest LTS release.
-![alt text](image-3.png)
+![alt text](./images/image-3.png)
 
 # Step 3: How to Manage Different Node.js Versions
 
@@ -74,7 +74,7 @@ You will get the following output that shows the current enabled version (appear
 
 From the output below, the current active release is Node.js v20.8.1 and the default version is v21.0.0.
 
-![alt text](image-4.png)
+![alt text](./images/image-4.png)
 You can easily switch from one version to another. For example, to switch to Node 18, run the command:
 ```bash
 $ nvm use 18
@@ -83,13 +83,13 @@ Again, you can confirm the current version of Node.js as shown.
 ```bash
 $ node -v
 ```
-![alt text](image-5.png)
+![alt text](./images/image-5.png)
 
 To set Node 20 as the default Node.js version, run the command:
 ```bash
 $ nvm alias default 20
 ```
-![alt text](image-6.png)
+![alt text](./images/image-6.png)
 # Step 4: Create a Sample Node.js Application (Optional)
 With Node.js installed, let’s now create a Node.js application. For illustration, we will create a simple ‘Hello World’ application.
 
@@ -128,7 +128,7 @@ Then run the Node application as shown.
 $ node my_helloworld_app.js
 ```
 You will get a one-line output: server running at http://0.0.0.0:3000
-![alt text](image-7.png)
+![alt text](./images/image-7.png)
 
 You can confirm that the application is running by browsing the URL shown.
 
@@ -145,7 +145,7 @@ To get started with the pm2 module, install it by running the following command:
 $ npm install -g pm2 
 ```
 The command yields the following output:
-![alt text](image-8.png)
+![alt text](./images/image-8.png)
 Next, set up the module to start on boot.
 
 ```bash
@@ -153,18 +153,18 @@ $ pm2 startup
 ```
 The following output will be displayed with basic instructions for managing an application:
 
-![alt text](image-9.png)
+![alt text](./images/image-9.png)
 Now, lets start and daemonize our application and set it to run silently in the background.
 
 ```bash
 $ pm2 start my_helloworld_app.js
 ```
-![alt text](image-10.png)
+![alt text](./images/image-10.png)
 To save the configurations made, run the command:
 ```bash
 $ pm2 save
 ```
-![alt text](image-11.png)
+![alt text](./images/image-11.png)
 For additional information about the pm2 module, visit the pm2 official site.
 
 # Closing thoughts
